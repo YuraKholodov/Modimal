@@ -1,0 +1,78 @@
+.card {
+  position: relative;
+
+  & .icon--favorite {
+    fill: #ffffff;
+  }
+
+  &__fav-btn {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    z-index: 10;
+
+    &:hover .icon--favorite {
+      stroke: rgb(227, 50, 121);
+    }
+
+    &--selected .icon--favorite {
+      stroke: var(--state-color-error);
+      fill: var(--state-color-error);
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 5.5px 8px;
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    color: var(--black);
+
+    & a {
+      color: var(--black);
+    }
+
+    & a::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  &__cols {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    text-transform: capitalize;
+    color: var(--black);
+  }
+
+  &__price {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    color: var(--black);
+  }
+
+  &__colors {
+    display: flex;
+    gap: 8px;
+  }
+}

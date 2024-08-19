@@ -6,7 +6,12 @@
 
 .icon {
   fill: var(--neutral-gray202020);
-  stroke: transparent;
+  // stroke: transparent;
   width: 24px;
   height: 24px;
+
+  &--favorite{
+    fill: transparent;
+    stroke: var(--neutral-gray202020);
+  }
 }

@@ -9,4 +9,10 @@
   line-height: 1.7;
   text-transform: capitalize;
   text-align: center;
+
+  &--small{
+    min-width: unset;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }

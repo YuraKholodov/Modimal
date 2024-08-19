@@ -1,0 +1,17 @@
+.color {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  &--black {
+    background-color: var(--black);
+  }
+
+  &--blue {
+    background-color: #7dc3eb;
+  }
+
+  &--green {
+    background-color: var(--primary);
+  }
+}
