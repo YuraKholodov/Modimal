@@ -1,0 +1,12 @@
+.btn, a.btn {
+  display: inline-block;
+  padding: 8px;
+  min-width: 185px;
+  background: var(--white);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+  text-transform: capitalize;
+  text-align: center;
+}

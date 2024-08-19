@@ -1,0 +1,46 @@
+.header {
+  padding: 24px 0;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+  }
+
+  &__nav-list {
+    display: flex;
+    gap: 0 30px;
+
+    & a {
+      font-weight: 400;
+      font-size: 18px;
+
+      line-height: 1.8;
+      text-transform: capitalize;
+      color: var(--neutral-gray404040);
+
+      &.active {
+        color: var(--primary-primary-600);
+      }
+    }
+  }
+
+  &__account-list {
+    display: flex;
+    align-items: center;
+    gap: 0 24px;
+
+    & a {
+      display: inline-block;
+      transition: 0.2s ease-in;
+    }
+
+    & a:hover {
+      background: var(--neutral-grayededed);
+    }
+  }
+}
