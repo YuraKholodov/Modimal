@@ -1,4 +1,5 @@
-.btn, a.btn {
+.btn,
+a.btn {
   display: inline-block;
   padding: 8px;
   min-width: 185px;
@@ -10,9 +11,19 @@
   text-transform: capitalize;
   text-align: center;
 
-  &--small{
+  transition: 0.5s;
+
+  &:hover {
+    background: var(--neutral-grayededed);
+  }
+
+  &--small {
     min-width: unset;
     padding-right: 15px;
     padding-left: 15px;
+  }
+
+  @include mobile {
+    min-width: unset;
   }
 }

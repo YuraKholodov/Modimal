@@ -14,5 +14,10 @@
       border-radius: 100% !important;
       background: var(--neutral-graydfdfdf) !important;
     }
+
+    @include mobile {
+      width: 8px !important;
+      height: 8px !important;
+    }
   }
 }
