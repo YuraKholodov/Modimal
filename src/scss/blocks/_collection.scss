@@ -1,12 +1,12 @@
 .collection {
-  &__title {
-    margin-bottom: 24px;
-  }
-
   &__cols {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+
+    @include mobile {
+      gap: 16px;
+    }
   }
 
   &__col {
@@ -14,5 +14,9 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 64px;
+
+    @include mobile {
+      gap: 24px;
+    }
   }
 }

@@ -10,7 +10,12 @@
   text-transform: capitalize;
   color: var(--neutral-graycbcbcb);
 
-  &__copyright{
+  @include mobile {
+    margin-top: 24px;
+    padding: 8px 0;
+  }
+
+  &__copyright {
     padding-left: 32px;
   }
 }

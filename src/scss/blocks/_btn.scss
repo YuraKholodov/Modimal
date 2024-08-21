@@ -23,6 +23,15 @@ a.btn {
     padding-left: 15px;
   }
 
+  &--mobile-wide {
+    @include mobile {
+      width: 100%;
+      text-transform: capitalize;
+      text-align: left;
+      padding: 8px 16px;
+    }
+  }
+
   @include mobile {
     min-width: unset;
   }
