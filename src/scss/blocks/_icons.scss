@@ -14,4 +14,10 @@
     fill: transparent;
     stroke: var(--neutral-gray202020);
   }
+
+  &--arrow-down {
+    width: 12px;
+    height: 8px;
+    transition: 0.5s;
+  }
 }

@@ -1,0 +1,125 @@
+.mobile-nav {
+  position: fixed;
+  // top: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  overflow-y: auto;
+
+  padding: 106px 20px 56px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: var(--white);
+  transition: all 0.2s ease-in;
+}
+
+.mobile-nav--open {
+  top: 0;
+}
+
+.mobile-nav a {
+  color: var(--black);
+}
+
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mobile-links__parent {
+  border-bottom: 1px solid var(--black);
+}
+
+.mobile-links__parent-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &.mobile-sub--open .icon--arrow-down {
+    transform: rotate(180deg);
+  }
+}
+
+.mobile-links__parent-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 1.8;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.mobile-sub {
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.2s ease-in;
+}
+
+.mobile-sub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0 16px 35px;
+}
+
+.mobile-sub-list__item {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 1.8;
+  text-transform: capitalize;
+  color: var(--neutral-gray404040);
+}
+.mobile-sub-list__link {
+  padding-top: 7px;
+  width: 100%;
+  display: inline-block;
+  transition: 0.2s;
+
+  &:hover {
+    color: var(--black);
+  }
+}
+
+.mobile-nav__btns {
+  border-top: 1px solid var(--neutral-graycbcbcb);
+  padding-top: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.btn-outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  height: 40px;
+
+  padding: 8px 16px;
+  border: 1px solid var(--primary-primary-600);
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 1.8;
+  text-transform: capitalize;
+  color: var(--primary-primary-600);
+  transition: 0.5s;
+
+  &:hover {
+    color: var(--black);
+  }
+}

@@ -1,5 +1,4 @@
 import Swiper from "swiper/bundle";
-
 import "swiper/css/bundle";
 
 const swiper = new Swiper(".swiper", {
@@ -19,3 +18,9 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
+
+import mobileNav from "./modules/mobile-nav";
+mobileNav();
+
+import accordion from "./modules/accordion";
+accordion();

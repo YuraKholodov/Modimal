@@ -1,5 +1,8 @@
 .header {
+  position: relative;
+  z-index: 200;
   padding: 24px 0;
+  background-color: var(--white);
 
   @include mobile {
     padding: 4px 0;
